@@ -208,7 +208,7 @@ st.markdown("---")
 st.markdown("#### Want a custom ROI breakdown for your center?")
 cta = st.button("Book Your ROI Call (Demo)", type="primary")
 if cta:
-    st.markdown("👉 [Contact us on Calendly](https://calendly.com/)")  # Replace with your real link
+    st.markdown("Contrasts link to calendy or their website")  # Replace with your real link
 
 st.markdown(
     """
