@@ -3,14 +3,11 @@ import streamlit.components.v1 as components
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-st.set_page_config(page_title="Countdown", page_icon="⏳")
+st.set_page_config(page_title="Big Boiii Countdown", page_icon="🔒")
 
-st.title("⏳ Countdown")
-st.write("Counting down to **July 1, 2026 at 8:00 AM** (US Eastern Time).")
+st.title("🔒 Countdown")
+st.write("Count Down until **Big Boiii Big Dawg Danger D operates Jello**.")
 
-# Anchor the target to a specific timezone so the countdown is correct no
-# matter where it's viewed, and so it stays right through daylight saving.
-# Change the zone here if you want a different one (e.g. "UTC", "Europe/London").
 target = datetime(2026, 7, 1, 8, 0, 0, tzinfo=ZoneInfo("America/New_York"))
 target_ms = int(target.timestamp() * 1000)
 
@@ -18,16 +15,16 @@ html = r"""
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   .cd-wrap { font-family: 'Rubik', system-ui, sans-serif; text-align: center; }
-  .cd-bar  { height: 6px; border-radius: 6px; margin: 0 auto 24px; width: 100%; max-width: 520px;
-             background: linear-gradient(90deg, #ff00c1, #FEDA00, #67dedf); }
-  .cd-grid { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-  .cd-cell { background: #F9F8F8; border-radius: 16px; padding: 18px 22px; min-width: 92px;
-             box-shadow: 0 2px 10px rgba(143,0,107,0.08); }
-  .cd-num  { font-size: 44px; font-weight: 700; color: #8f006b; line-height: 1;
+  .cd-bar  { height: 4px; border-radius: 0; margin: 0 auto 28px; width: 100%; max-width: 520px;
+             background: linear-gradient(90deg, #1a1a1a, #8B0000, #1a1a1a); }
+  .cd-grid { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cd-cell { background: #1c1c1c; border-radius: 6px; padding: 18px 22px; min-width: 92px;
+             border: 1px solid #333; box-shadow: 0 4px 16px rgba(0,0,0,0.5); }
+  .cd-num  { font-size: 44px; font-weight: 700; color: #cc0000; line-height: 1;
              font-variant-numeric: tabular-nums; }
-  .cd-lab  { margin-top: 8px; font-size: 13px; font-weight: 500; letter-spacing: 0.08em;
-             text-transform: uppercase; color: #1d8587; }
-  .cd-done { font-family: 'Rubik', system-ui, sans-serif; font-size: 34px; font-weight: 700; color: #ff00c1; }
+  .cd-lab  { margin-top: 8px; font-size: 11px; font-weight: 500; letter-spacing: 0.15em;
+             text-transform: uppercase; color: #666; }
+  .cd-done { font-family: 'Rubik', system-ui, sans-serif; font-size: 28px; font-weight: 700; color: #cc0000; }
 </style>
 
 <div class="cd-wrap">
@@ -47,7 +44,7 @@ html = r"""
     const diff = target - Date.now();
     if (diff <= 0) {
       body.className = '';
-      body.innerHTML = '<div class="cd-done">🎉 It\'s here!</div>';
+      body.innerHTML = '<div class="cd-done">BIG BOIII IS OPERATING.</div>';
       clearInterval(timer);
       return;
     }
